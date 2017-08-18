@@ -70,6 +70,7 @@ h1 {
 
 .intro {
   padding: 0 5px;
+  margin-top: 30px;
 }
 
 p {
@@ -258,12 +259,15 @@ p {
   .col {
     float: left;
     width: 50%;
-    height: 100%;
   }
 
   .col p {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  #portfolio .col p {
+    height: 65px;
   }
 
   #skills p {
@@ -316,7 +320,7 @@ p {
 
   .main-menu {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .main-nav {
@@ -367,6 +371,10 @@ p {
     margin-bottom: 15px;
     padding: 10px;
     padding-left: 30px;
+  }
+
+  #portfolio .col p {
+    height: 75px;
   }
 
   #skills {
