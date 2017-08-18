@@ -12,15 +12,18 @@
 
   <body>
     <header>
-      <div class="wrapper">
-        <h1>Charlotte Wong</h1>
-        <nav>
-          <ul class="main-nav">
-            <li><a href="">HOME</a></li>
-            <li><a href-"">PORTFOLIO</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </nav>
+      <div class="wrapper heading" id="home">
+        <div class="main-menu">
+          <h1>Charlotte Wong</h1>
+          <nav>
+            <ul class="main-nav">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
           <div class="clearfix">
           <img class="profile" src="images/responsive-layout-profile.png" alt="Profile Picture">
           <p class="intro">Hi, I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
@@ -28,68 +31,69 @@
       </div>
     </header>
 
-    <div class="wrapper portfolio clearfix">
+    <div class="main-body">
+      <div class="wrapper clearfix" id="portfolio" >
 
-        <h2>PORTFOLIO</h2>
+          <h2>PORTFOLIO</h2>
 
-        <section class="col">
-          <img src="images/portfolio-1.png" alt="Marketing Page">
-          <h3>Marketing Page</h3>
-          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-        </section>
+          <section class="col">
+            <img src="images/portfolio-1.png" alt="Marketing Page">
+            <h3>Marketing Page</h3>
+            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+          </section>
 
-        <section class="col">
-          <img src="images/portfolio-2.png" alt="Search Page">
-          <h3>Search Page</h3>
-          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-        </section>
+          <section class="col">
+            <img src="images/portfolio-2.png" alt="Search Page">
+            <h3>Search Page</h3>
+            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+          </section>
 
-        <section class="col">
-            <img src="images/portfolio-3.png" alt="Travel App">
-            <h3>Travel App</h3>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        </section>
+          <section class="col">
+              <img src="images/portfolio-3.png" alt="Travel App">
+              <h3>Travel App</h3>
+              <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+          </section>
 
-        <section class="col">
-            <img src="images/portfolio-4.png" alt="Map of Favorite Spots">
-            <h3>Map of Favorite Spots</h3>
-            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-        </section>
+          <section class="col">
+              <img src="images/portfolio-4.png" alt="Map of Favorite Spots">
+              <h3>Map of Favorite Spots</h3>
+              <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+          </section>
 
-        <section class="col">
-          <img src="images/portfolio-5.png" alt="Photo Gallery">
-          <h3>Photo Gallery</h3>
-          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-        </section>
+          <section class="col">
+            <img src="images/portfolio-5.png" alt="Photo Gallery">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          </section>
 
-        <section class="col">
-          <img src="images/portfolio-6.png" alt="Calculator">
-          <h3>Calculator</h3>
-          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-        </section>
+          <section class="col">
+            <img src="images/portfolio-6.png" alt="Calculator">
+            <h3>Calculator</h3>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+          </section>
 
-   </div>
+     </div>
 
-   <div class="wrapper skills clearfix">
+     <div class="wrapper skills clearfix" id="skills">
+       <div class="container">
+         <h2>SKILLS</h2>
 
-       <h2>SKILLS</h2>
+         <section class="col">
+           <img src="images/skills-html.png">
+           <p>HTML skills have been a critically important part of the web designer's toolbox since the very start of this profession. For many, this markup language is their entryway into the world of web design.</p>
+         </section>
 
-       <section class="col">
-         <img src="images/skills-html.png">
-         <p>HTML skills have been a critically important part of the web designer's toolbox since the very start of this profession. For many, this markup language is their entryway into the world of web design.</p>
-       </section>
-
-       <section class="col">
-         <img src="images/skills-css.png">
-         <p>While HTML dictates the structure of sites, CSS handles the visual appearance. As such, CSS is another incredibly most important language that web designers can learn.</p>
-       </section>
-
-   </div>
-
+         <section class="col">
+           <img src="images/skills-css.png">
+           <p>While HTML dictates the structure of sites, CSS handles the visual appearance. As such, CSS is another incredibly most important language that web designers can learn.</p>
+         </section>
+      </div>
+     </div>
+    </div>
 
     <footer>
       <div class="wrapper">
-        <div class="contact">
+        <div id="contact">
           <h2>CONTACT</h2>
           <p class="more">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
           <p class="info">Phone <a href="tel:1-111-555-1234">+1 (111)555-1234</a></p>
@@ -98,28 +102,19 @@
       </div>
 
       <div class="wrapper footer-nav">
-        <h4><a href="">Charlotte Wong</a></h4>
-        <nav>
-          <ul>
-            <li class="top"><a href="">BACK TO TOP</a></li>
-            <li class="menu"><a href="">HOME</a></li>
-            <li class="menu"><a href="">PORTFOLIO</a></li>
-            <li class="menu"><a href="">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- <nav class="footer-nav">
-        <div class="wrapper footer-nav clearfix">
-          <h4><a href="">Charlotte Wong</a></h4>
-          <ul class="footer-nav">
-            <li class="top"><a href="">BACK TO TOP</a></li>
-            <li class="menu"><a href="">HOME</a></li>
-            <li class="menu"><a href="">PORTFOLIO</a></li>
-            <li class="menu"><a href="">CONTACT</a></li>
-          </ul>
+        <div class="container">
+          <h4><a href="#home">Charlotte Wong</a></h4>
+          <nav>
+            <ul>
+              <li class="top"><a href="#home">BACK TO TOP</a></li>
+              <li class="menu"><a href="#home">HOME</a></li>
+              <li class="menu"><a href="#portfolio">PORTFOLIO</a></li>
+              <li class="menu"><a href="#skills">SKILLS</a></li>
+              <li class="menu"><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav> -->
+      </div>
 
     </footer>
   </body>
